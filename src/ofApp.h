@@ -1,28 +1,12 @@
 #pragma once
 
 #include "ofMain.h"
+#include "..\Body.h"
 
 class ofApp : public ofBaseApp {
 private:
 	// Sun
-	glm::vec2 sunPosition;
-	float sunSize;
-	ofColor sunColor;
-
-	// Earth
-	glm::vec2 earthPosition;
-	float earthSize;
-	ofColor earthColor;
-	float earthSpeed;
-	float earthDistance;
-
-	// moon
-	glm::vec2 moonPosition;
-	float moonSize;
-	ofColor moonColor;
-	float moonDistance;
-	float moonSpeed;
-
+	Body* s;
 public:
 	void setup();
 	void update();
